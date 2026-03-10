@@ -1,6 +1,6 @@
-image: iw_hub_warehouse_navigation.png
+image: iw_warehouse_cuopt.png
 resolution: 0.05
-origin: [-11.975, -19.27500114440918, 0.0000]
+origin: [-17.27500114440918, -82.725, 0.0000]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.196

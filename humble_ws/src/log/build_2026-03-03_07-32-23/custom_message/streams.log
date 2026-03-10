@@ -1,0 +1,96 @@
+[0.046s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/custom_message': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/custom_message -DCMAKE_INSTALL_PREFIX=/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/custom_message
+[0.314s] -- The C compiler identification is GNU 11.4.0
+[0.447s] -- The CXX compiler identification is GNU 11.4.0
+[0.464s] -- Detecting C compiler ABI info
+[0.576s] -- Detecting C compiler ABI info - done
+[0.585s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.585s] -- Detecting C compile features
+[0.586s] -- Detecting C compile features - done
+[0.591s] -- Detecting CXX compiler ABI info
+[0.710s] -- Detecting CXX compiler ABI info - done
+[0.728s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.728s] -- Detecting CXX compile features
+[0.729s] -- Detecting CXX compile features - done
+[0.733s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.384s] -- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.585s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.707s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.730s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.750s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.791s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.846s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.890s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.325s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.867s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.067s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.104s] -- Found PythonInterp: /usr/local/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.109s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.161s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.162s] -- Using PYTHON_EXECUTABLE: /usr/local/bin/python3
+[3.162s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.162s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.199s] -- Found PythonExtra: .so  
+[3.271s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.310s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.315s] -- Added test 'lint_cmake' to check CMake code style
+[3.321s] -- Added test 'xmllint' to check XML markup files
+[3.322s] -- Configuring done
+[3.363s] -- Generating done
+[3.377s] -- Build files have been written to: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/custom_message
+[3.390s] Invoked command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/custom_message' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/custom_message -DCMAKE_INSTALL_PREFIX=/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/custom_message
+[3.391s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/custom_message': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/custom_message -- -j16 -l16
+[3.441s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.455s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.465s] [  6%] Built target ament_cmake_python_copy_custom_message
+[3.774s] [  6%] Built target custom_message__cpp
+[3.793s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.794s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.794s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.822s] [ 19%] [32mBuilding C object CMakeFiles/custom_message__rosidl_generator_c.dir/rosidl_generator_c/custom_message/msg/detail/sample_msg__functions.c.o[0m
+[3.825s] running egg_info
+[3.856s] creating custom_message.egg-info
+[3.856s] writing custom_message.egg-info/PKG-INFO
+[3.856s] writing dependency_links to custom_message.egg-info/dependency_links.txt
+[3.857s] writing top-level names to custom_message.egg-info/top_level.txt
+[3.863s] writing manifest file 'custom_message.egg-info/SOURCES.txt'
+[3.955s] reading manifest file 'custom_message.egg-info/SOURCES.txt'
+[3.956s] writing manifest file 'custom_message.egg-info/SOURCES.txt'
+[3.988s] [ 22%] [32m[1mLinking C shared library libcustom_message__rosidl_generator_c.so[0m
+[4.006s] [ 22%] Built target ament_cmake_python_build_custom_message_egg
+[4.037s] [ 22%] Built target custom_message__rosidl_generator_c
+[4.051s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.051s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.052s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.069s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_message__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_message/msg/sample_msg__type_support.cpp.o[0m
+[4.133s] [ 38%] [32mBuilding CXX object CMakeFiles/custom_message__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_message/msg/detail/sample_msg__type_support.cpp.o[0m
+[4.149s] [ 41%] [32mBuilding CXX object CMakeFiles/custom_message__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_message/msg/detail/dds_fastrtps/sample_msg__type_support.cpp.o[0m
+[4.359s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_message__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_message/msg/detail/sample_msg__type_support_c.cpp.o[0m
+[4.360s] [ 48%] [32mBuilding CXX object CMakeFiles/custom_message__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_message/msg/sample_msg__type_support.cpp.o[0m
+[4.401s] [ 51%] [32m[1mLinking CXX shared library libcustom_message__rosidl_typesupport_c.so[0m
+[4.428s] [ 54%] [32mBuilding C object CMakeFiles/custom_message__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_message/msg/detail/sample_msg__type_support.c.o[0m
+[4.457s] [ 54%] Built target custom_message__rosidl_typesupport_c
+[4.488s] [ 58%] [32m[1mLinking C shared library libcustom_message__rosidl_typesupport_introspection_c.so[0m
+[4.517s] [ 61%] [32m[1mLinking CXX shared library libcustom_message__rosidl_typesupport_cpp.so[0m
+[4.533s] [ 61%] Built target custom_message__rosidl_typesupport_introspection_c
+[4.590s] [ 61%] Built target custom_message__rosidl_typesupport_cpp
+[4.664s] [ 64%] [32m[1mLinking CXX shared library libcustom_message__rosidl_typesupport_introspection_cpp.so[0m
+[4.672s] [ 67%] [32m[1mLinking CXX shared library libcustom_message__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.755s] [ 67%] Built target custom_message__rosidl_typesupport_introspection_cpp
+[4.761s] [ 70%] [32m[1mLinking CXX shared library libcustom_message__rosidl_typesupport_fastrtps_c.so[0m
+[4.777s] [ 70%] Built target custom_message__rosidl_typesupport_fastrtps_cpp
+[4.838s] [ 70%] Built target custom_message__rosidl_typesupport_fastrtps_c
+[4.867s] [ 70%] Built target custom_message
+[4.899s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.280s] [ 74%] Built target custom_message__py
+[5.310s] [ 77%] [32mBuilding C object CMakeFiles/custom_message__rosidl_generator_py.dir/rosidl_generator_py/custom_message/msg/_sample_msg_s.c.o[0m
+[5.703s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/custom_message/libcustom_message__rosidl_generator_py.so[0m
+[5.808s] [ 80%] Built target custom_message__rosidl_generator_py
+[5.859s] [ 83%] [32mBuilding C object CMakeFiles/custom_message__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_message/_custom_message_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.861s] [ 87%] [32mBuilding C object CMakeFiles/custom_message__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_message/_custom_message_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.887s] [ 90%] [32mBuilding C object CMakeFiles/custom_message__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_message/_custom_message_s.ep.rosidl_typesupport_c.c.o[0m
+[6.056s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/custom_message/custom_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.056s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/custom_message/custom_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.132s] [ 96%] Built target custom_message__rosidl_typesupport_c__pyext
+[6.147s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_message/custom_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.165s] [100%] Built target custom_message__rosidl_typesupport_fastrtps_c__pyext
+[6.242s] [100%] Built target custom_message__rosidl_typesupport_introspection_c__pyext

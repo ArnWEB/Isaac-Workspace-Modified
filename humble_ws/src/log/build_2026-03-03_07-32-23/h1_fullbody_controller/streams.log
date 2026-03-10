@@ -1,0 +1,56 @@
+[0.045s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/humanoid_locomotion_policy_example/h1_fullbody_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller
+[0.311s] -- The C compiler identification is GNU 11.4.0
+[0.443s] -- The CXX compiler identification is GNU 11.4.0
+[0.460s] -- Detecting C compiler ABI info
+[0.566s] -- Detecting C compiler ABI info - done
+[0.578s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.578s] -- Detecting C compile features
+[0.581s] -- Detecting C compile features - done
+[0.587s] -- Detecting CXX compiler ABI info
+[0.702s] -- Detecting CXX compiler ABI info - done
+[0.714s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.714s] -- Detecting CXX compile features
+[0.716s] -- Detecting CXX compile features - done
+[0.729s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.387s] -- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.581s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[1.586s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.703s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.720s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.746s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.785s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.842s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.923s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.099s] -- Configuring done
+[2.104s] -- Generating done
+[2.107s] -- Build files have been written to: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller
+[2.118s] Invoked command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/humanoid_locomotion_policy_example/h1_fullbody_controller -DCMAKE_INSTALL_PREFIX=/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller
+[2.119s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller -- -j16 -l16
+[2.177s] Invoked command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller -- -j16 -l16
+[2.180s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller
+[2.190s] -- Install configuration: ""
+[2.190s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/scripts
+[2.190s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/scripts/__init__.py
+[2.192s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/scripts/h1_fullbody_controller.py
+[2.193s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/launch
+[2.194s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/launch/h1_fullbody_controller.launch.py
+[2.194s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/policy
+[2.194s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/policy/h1_env.yaml
+[2.195s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/policy/h1_policy.pt
+[2.198s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/lib/h1_fullbody_controller/h1_fullbody_controller.py
+[2.198s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/ament_index/resource_index/package_run_dependencies/h1_fullbody_controller
+[2.199s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/ament_index/resource_index/parent_prefix_path/h1_fullbody_controller
+[2.199s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/environment/ament_prefix_path.sh
+[2.199s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/environment/ament_prefix_path.dsv
+[2.199s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/environment/path.sh
+[2.199s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/environment/path.dsv
+[2.199s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/local_setup.bash
+[2.200s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/local_setup.sh
+[2.200s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/local_setup.zsh
+[2.200s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/local_setup.dsv
+[2.200s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/package.dsv
+[2.201s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/ament_index/resource_index/packages/h1_fullbody_controller
+[2.201s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/cmake/h1_fullbody_controllerConfig.cmake
+[2.201s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/cmake/h1_fullbody_controllerConfig-version.cmake
+[2.201s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/h1_fullbody_controller/share/h1_fullbody_controller/package.xml
+[2.204s] Invoked command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/h1_fullbody_controller

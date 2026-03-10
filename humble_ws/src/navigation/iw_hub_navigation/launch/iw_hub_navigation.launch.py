@@ -16,16 +16,18 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
-from launch.actions import IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, GroupAction, IncludeLaunchDescription
+from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, TextSubstitution
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
 
     use_sim_time = LaunchConfiguration("use_sim_time", default="True")
+    namespace = LaunchConfiguration("namespace", default="amr1")
+    use_rviz = LaunchConfiguration("use_rviz", default="True")
 
     map_dir = LaunchConfiguration(
         "map",
@@ -45,8 +47,38 @@ def generate_launch_description():
 
     rviz_config_dir = os.path.join(get_package_share_directory("iw_hub_navigation"), "rviz2", "iw_hub_navigation.rviz")
 
+    # Group all namespace-specific launches together
+    nav_group = GroupAction(
+        [
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(os.path.join(nav2_bringup_launch_dir, "rviz_launch.py")),
+                condition=IfCondition(use_rviz),
+                launch_arguments={
+                    "namespace": namespace,
+                    "use_namespace": "True",
+                    "rviz_config": rviz_config_dir
+                }.items(),
+            ),
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([nav2_bringup_launch_dir, "/bringup_launch.py"]),
+                launch_arguments={
+                    "map": map_dir,
+                    "use_sim_time": use_sim_time,
+                    "params_file": param_dir,
+                    "namespace": namespace,
+                    "use_namespace": "True"
+                }.items(),
+            ),
+        ]
+    )
+
     return LaunchDescription(
         [
+            DeclareLaunchArgument(
+                "namespace",
+                default_value="amr1",
+                description="Namespace for the robot"
+            ),
             DeclareLaunchArgument("map", default_value=map_dir, description="Full path to map file to load"),
             DeclareLaunchArgument(
                 "params_file", default_value=param_dir, description="Full path to param file to load"
@@ -54,13 +86,9 @@ def generate_launch_description():
             DeclareLaunchArgument(
                 "use_sim_time", default_value="true", description="Use simulation (Omniverse Isaac Sim) clock if true"
             ),
-            IncludeLaunchDescription(
-                PythonLaunchDescriptionSource(os.path.join(nav2_bringup_launch_dir, "rviz_launch.py")),
-                launch_arguments={"namespace": "", "use_namespace": "False", "rviz_config": rviz_config_dir}.items(),
+            DeclareLaunchArgument(
+                "use_rviz", default_value="true", description="Whether to start RViz"
             ),
-            IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([nav2_bringup_launch_dir, "/bringup_launch.py"]),
-                launch_arguments={"map": map_dir, "use_sim_time": use_sim_time, "params_file": param_dir}.items(),
-            ),
+            nav_group,
         ]
     )

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "custom_message__py",
+		"source" : "/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/custom_message/custom_message__py"
+	}
+}

@@ -1,0 +1,49 @@
+[0.287s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/navigation/iw_hub_navigation -DCMAKE_INSTALL_PREFIX=/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation
+[0.349s] -- The C compiler identification is GNU 11.4.0
+[0.423s] -- The CXX compiler identification is GNU 11.4.0
+[0.440s] -- Detecting C compiler ABI info
+[0.556s] -- Detecting C compiler ABI info - done
+[0.565s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.565s] -- Detecting C compile features
+[0.567s] -- Detecting C compile features - done
+[0.571s] -- Detecting CXX compiler ABI info
+[0.699s] -- Detecting CXX compiler ABI info - done
+[0.713s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.713s] -- Detecting CXX compile features
+[0.713s] -- Detecting CXX compile features - done
+[0.719s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.362s] -- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.683s] -- Configuring done
+[1.688s] -- Generating done
+[1.692s] -- Build files have been written to: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation
+[1.698s] Invoked command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/navigation/iw_hub_navigation -DCMAKE_INSTALL_PREFIX=/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation
+[1.710s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation -- -j16 -l16
+[1.753s] Invoked command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation -- -j16 -l16
+[1.767s] Invoking command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation
+[1.775s] -- Install configuration: ""
+[1.775s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/launch
+[1.776s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/launch/iw_hub_navigation_isaacsim.launch.py
+[1.776s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/launch/iw_hub_navigation.launch.py
+[1.778s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/params
+[1.778s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/params/iw_hub_navigation_params.yaml
+[1.779s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/maps
+[1.779s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/maps/iw_hub_warehouse_navigation.yaml
+[1.779s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/maps/iw_hub_warehouse_navigation.png
+[1.779s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/rviz2
+[1.779s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/rviz2/iw_hub_navigation.rviz
+[1.780s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/ament_index/resource_index/package_run_dependencies/iw_hub_navigation
+[1.782s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/ament_index/resource_index/parent_prefix_path/iw_hub_navigation
+[1.782s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/environment/ament_prefix_path.sh
+[1.782s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/environment/ament_prefix_path.dsv
+[1.782s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/environment/path.sh
+[1.782s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/environment/path.dsv
+[1.782s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/local_setup.bash
+[1.784s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/local_setup.sh
+[1.784s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/local_setup.zsh
+[1.784s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/local_setup.dsv
+[1.785s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/package.dsv
+[1.786s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/ament_index/resource_index/packages/iw_hub_navigation
+[1.786s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/cmake/iw_hub_navigationConfig.cmake
+[1.786s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/cmake/iw_hub_navigationConfig-version.cmake
+[1.786s] -- Installing: /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/install/iw_hub_navigation/share/iw_hub_navigation/package.xml
+[1.799s] Invoked command in '/home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/warehouse-automation-001/install/warehouse_msgs:/home/ubuntu/warehouse-automation-001/install/order_system:/home/ubuntu/warehouse-automation-001/install/orchestrator:/home/ubuntu/warehouse-automation-001/install/hello_world_pkgs:/home/ubuntu/warehouse-automation-001/install/cuopt_bridge:/home/ubuntu/warehouse-automation-001/install/amr_description:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/ubuntu/IsaacSim-ros_workspaces/humble_ws/src/build/iw_hub_navigation
