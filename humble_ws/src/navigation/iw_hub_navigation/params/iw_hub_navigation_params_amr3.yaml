@@ -44,7 +44,7 @@ amcl:
     first_map_only: false
     initial_pose:
       x: 0.0
-      y: 7.01
+      y: 9.01
       z: 0.0
       yaw: 0.0
 

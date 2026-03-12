@@ -24,7 +24,6 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-
     use_sim_time = LaunchConfiguration("use_sim_time", default="True")
     namespace = LaunchConfiguration("namespace", default="amr1")
     use_rviz = LaunchConfiguration("use_rviz", default="True")
@@ -32,42 +31,65 @@ def generate_launch_description():
     map_dir = LaunchConfiguration(
         "map",
         default=os.path.join(
-            get_package_share_directory("iw_hub_navigation"), "maps", "iw_hub_warehouse_navigation.yaml"
+            get_package_share_directory("iw_hub_navigation"),
+            "maps",
+            "iw_hub_warehouse_navigation.yaml",
         ),
     )
 
     param_dir = LaunchConfiguration(
         "params_file",
         default=os.path.join(
-            get_package_share_directory("iw_hub_navigation"), "params", "iw_hub_navigation_params.yaml"
+            get_package_share_directory("iw_hub_navigation"),
+            "params",
+            "iw_hub_navigation_params_amr1.yaml",
         ),
     )
 
-    nav2_bringup_launch_dir = os.path.join(get_package_share_directory("nav2_bringup"), "launch")
+    nav2_bringup_launch_dir = os.path.join(
+        get_package_share_directory("nav2_bringup"), "launch"
+    )
 
-    rviz_config_dir = os.path.join(get_package_share_directory("iw_hub_navigation"), "rviz2", "iw_hub_navigation.rviz")
+    rviz_config_dir = os.path.join(
+        get_package_share_directory("iw_hub_navigation"),
+        "rviz2",
+        "iw_hub_navigation.rviz",
+    )
 
     # Group all namespace-specific launches together
     nav_group = GroupAction(
         [
             IncludeLaunchDescription(
-                PythonLaunchDescriptionSource(os.path.join(nav2_bringup_launch_dir, "rviz_launch.py")),
+                PythonLaunchDescriptionSource(
+                    os.path.join(nav2_bringup_launch_dir, "rviz_launch.py")
+                ),
                 condition=IfCondition(use_rviz),
                 launch_arguments={
                     "namespace": namespace,
                     "use_namespace": "True",
-                    "rviz_config": rviz_config_dir
+                    "rviz_config": rviz_config_dir,
                 }.items(),
             ),
             IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([nav2_bringup_launch_dir, "/bringup_launch.py"]),
+                PythonLaunchDescriptionSource(
+                    [nav2_bringup_launch_dir, "/bringup_launch.py"]
+                ),
                 launch_arguments={
                     "map": map_dir,
                     "use_sim_time": use_sim_time,
                     "params_file": param_dir,
                     "namespace": namespace,
-                    "use_namespace": "True"
+                    "use_namespace": "True",
                 }.items(),
+            ),
+            # Nav2 Docking Server
+            Node(
+                package="opennav_docking",
+                executable="opennav_docking",
+                name="docking_server",
+                namespace=namespace,
+                output="screen",
+                parameters=[param_dir],
             ),
         ]
     )
@@ -75,16 +97,22 @@ def generate_launch_description():
     return LaunchDescription(
         [
             DeclareLaunchArgument(
-                "namespace",
-                default_value="amr1",
-                description="Namespace for the robot"
-            ),
-            DeclareLaunchArgument("map", default_value=map_dir, description="Full path to map file to load"),
-            DeclareLaunchArgument(
-                "params_file", default_value=param_dir, description="Full path to param file to load"
+                "namespace", default_value="amr1", description="Namespace for the robot"
             ),
             DeclareLaunchArgument(
-                "use_sim_time", default_value="true", description="Use simulation (Omniverse Isaac Sim) clock if true"
+                "map",
+                default_value=map_dir,
+                description="Full path to map file to load",
+            ),
+            DeclareLaunchArgument(
+                "params_file",
+                default_value=param_dir,
+                description="Full path to param file to load",
+            ),
+            DeclareLaunchArgument(
+                "use_sim_time",
+                default_value="true",
+                description="Use simulation (Omniverse Isaac Sim) clock if true",
             ),
             DeclareLaunchArgument(
                 "use_rviz", default_value="true", description="Whether to start RViz"

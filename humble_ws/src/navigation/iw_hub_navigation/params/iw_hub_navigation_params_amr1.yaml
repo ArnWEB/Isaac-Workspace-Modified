@@ -43,8 +43,8 @@ amcl:
     always_reset_initial_pose: false
     first_map_only: false
     initial_pose:
-      x: 0.0
-      y: 10.40
+      x: 3.161
+      y: 9.682
       z: 0.00
       yaw: 0.0
 
@@ -147,8 +147,8 @@ controller_server:
     # Goal checker parameters
     stopped_goal_checker:
       plugin: "nav2_controller::StoppedGoalChecker"
-      xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.05
+      yaw_goal_tolerance: 0.05
       stateful: True
     # DWB parameters
     FollowPath:
@@ -158,7 +158,7 @@ controller_server:
       min_vel_y: 0.0
       max_vel_x: 1.0
       max_vel_y: 0.0
-      max_vel_theta: 1.0
+      max_vel_theta: 0.5
       min_speed_xy: 0.0
       max_speed_xy: 1.0
       min_speed_theta: 0.0
@@ -175,7 +175,7 @@ controller_server:
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.2
-      xy_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.05
       trans_stopped_velocity: 0.25
       short_circuit_trajectory_evaluation: True
       stateful: True
@@ -187,7 +187,7 @@ controller_server:
       GoalAlign.forward_point_distance: 0.1
       PathDist.scale: 32.0
       GoalDist.scale: 24.0
-      RotateToGoal.scale: 32.0
+      RotateToGoal.scale: 64.0
       RotateToGoal.slowing_factor: 5.0
       RotateToGoal.lookahead_time: -1.0
 
@@ -215,7 +215,7 @@ local_costmap:
         plugin: "nav2_costmap_2d::InflationLayer"
         enabled: True
         cost_scaling_factor: 0.3
-        inflation_radius: 1.0
+        inflation_radius: 0.2
       front_rplidar_obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
@@ -297,7 +297,7 @@ global_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 0.3
-        inflation_radius: 1.5
+        inflation_radius: 0.2
       always_send_full_costmap: True
   global_costmap_client:
     ros__parameters:
@@ -381,3 +381,37 @@ waypoint_follower:
       plugin: "nav2_waypoint_follower::WaitAtWaypoint"
       enabled: True
       waypoint_pause_duration: 200
+
+# Nav2 Docking Server Configuration
+docking_server:
+  ros__parameters:
+    use_sim_time: True
+    base_frame_id: "base_link"
+    controller_frequency: 20.0
+    initial_perception_timeout: 5.0
+    failed_dock_retries: 3
+    dock_collision_check_frequency: 0.0  # Disable collision checking for docking
+    
+    # Dock plugin type
+    dock_plugins: ['simple_charging_dock']
+    
+    simple_charging_dock:
+      plugin: 'opennav_docking::SimpleChargingDock'
+      controller_kp: 3.0
+      controller_ki: 0.01
+      controller_kd: 0.1
+      max_propulsion_effort: 0.5
+      max_angular_effort: 0.5
+    
+    # Dock database - define your docks here
+    docks: ['dock_0', 'dock_1']
+    
+    dock_0:
+      type: "simple_charging_dock"
+      frame: "map"
+      pose: [13.15, 17.03, 1.57]  # x, y, theta (radians) = 90 degrees
+      
+    dock_1:
+      type: "simple_charging_dock"
+      frame: "map"
+      pose: [11.88591, 15.9442, 1.57]
